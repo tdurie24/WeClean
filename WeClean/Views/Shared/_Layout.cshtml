@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-    <title>@ViewData["Title"] - WeClean</title>
+    <title>@ViewData["Title"] - Cleanmate</title>
     <link href="~/css/bootstrap.css" rel="stylesheet">
     <link href="~/css/style.css" rel="stylesheet">
     <link href="~/css/responsive.css" rel="stylesheet">
@@ -30,10 +30,8 @@
                         <div class="top-left pull-left">
 
                             <ul class="social-nav">
-                                <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                <li><a href="https://www.facebook.com/Cleanmate-114627660339637" target="_blank"><span class="fa fa-facebook-f"></span></a></li>
                                 <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                                <li><a href="#"><span class="fa fa-youtube"></span></a></li>
                             </ul>
                         </div>
                         <!--Top Right-->
@@ -76,14 +74,7 @@
                             <div class="upper-column info-box">
                                 <div class="icon-box"><span class="flaticon-clock"></span></div>
                                 <ul>
-                                    <li><span>Office Opened</span> <br>Mon-Sat Day: 9am to 7pm </li>
-                                </ul>
-
-                            </div>
-                            <div class="upper-column info-box">
-                                <div class="icon-box"><span class="flaticon-trip"></span></div>
-                                <ul>
-                                    <li><span>75014 Paris, France</span> <br> 48 Boulevard Jourdan Cand  </li>
+                                    <li><span>Business Hours</span> <br>Mon-Sat Day: 9am to 7pm </li>
                                 </ul>
 
                             </div>
@@ -91,14 +82,6 @@
                             <!--Info Box-->
                             <div class="upper-column info-box">
                                 <div class="language dropdownn">
-                                    <a class="dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#">France <span class="fa fa-angle-down"></span></a>
-                                    <ul class="dropdown-menu style-one" aria-labelledby="dropdownMenu2">
-                                        <li><a href="#">England</a></li>
-                                        <li><a href="#">Germany</a></li>
-                                        <li><a href="#">London</a></li>
-                                        <li><a href="#">Canada</a></li>
-                                        <li><a href="#">Australia</a></li>
-                                    </ul>
                                 </div>
                             </div>
 
@@ -139,28 +122,19 @@
                                         </ul>
                                     </li>*@
                                     <li class="dropdown">
-                                        <a href="#">Services</a>
+                                        <a  asp-area="" asp-controller="Services" asp-action="Contact">Services</a>
                                         <ul>
-                                            <li><a href="#">Services</a></li>
-                                            <li><a href="#">Carpet Cleaning</a></li>
-                                            <li><a href="#">Tile and Grout</a></li>
-                                            <li><a href="#">Window Cleaning</a></li>
-                                            <li><a href="#">Laundry Service</a></li>
-                                            <li><a href="#">House Keeping</a></li>
-                                            <li><a href="#">Vehicle Cleaning</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#">Case studies</a>
-                                        <ul>
-                                            <li><a href="#">Case Studies 01</a></li>
-                                            <li><a href="#">Case Studies 02</a></li>
-                                            <li><a href="#">Case Studies 03</a></li>
-                                            <li><a href="#">Single Case Study</a></li>
+                                            <li><a asp-area="" asp-controller="Services" asp-action="OfficeCleaning">Office Cleaning</a></li>
+                                            <li><a asp-area="" asp-controller="Services" asp-action="HouseKeeping">House Keeping</a></li>
+                                            <li><a asp-area="" asp-controller="Services" asp-action="CarpetCleaning">Carpet Cleaning</a></li>
+                                            <li><a asp-area="" asp-controller="Services" asp-action="TileCleaning">Tile Cleaning</a></li>
+                                            <li><a asp-area="" asp-controller="Services" asp-action="WindowCleaning">Window Cleaning</a></li>
+                                            <li><a asp-area="" asp-controller="Services" asp-action="LaundryService">Laundry Service</a></li>
+                                            <li><a asp-area="" asp-controller="Services" asp-action="Disinfection">Home and Office Disinfection</a></li>
                                         </ul>
                                     </li>
                                     
-                                    <li><a href="#">Contact us</a></li>
+                                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact us</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -202,59 +176,25 @@
                             <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
                                 <ul class="navigation clearfix">
                                     <li class="current dropdown">
-                                        <a href="#">Home</a>
-                                        <ul>
-                                            <li><a href="#">Home Page 01</a></li>
-                                            <li><a href="index-3.html">Home Page 02</a></li>
-                                            <li class="dropdown">
-                                                <a href="#">Header Styles</a>
-                                                <ul>
-                                                    <li><a href="index-2.html">Header Style 01</a></li>
-                                                    <li><a href="index-3.html">Header Style 02</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                                        <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#">Pages</a>
-                                        <ul>
-                                            <li><a href="about.html">About Company</a></li>
-                                            <li><a href="appointment.html">Make an Appointment</a></li>
-                                            <li><a href="faq.html">FAQ’s</a></li>
-                                            <li><a href="testimonial.html">Testimonials</a></li>
-                                            <li><a href="not-found.html">404</a></li>
-                                        </ul>
+                                        <a asp-area="" asp-controller="Home" asp-action="About">About</a>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#">Services</a>
                                         <ul>
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="carpet-cleaning.html">Carpet Cleaning</a></li>
-                                            <li><a href="tile-grout.html">Tile and Grout</a></li>
-                                            <li><a href="window-cleaning.html">Window Cleaning</a></li>
-                                            <li><a href="laundry-service.html">Laundry Service</a></li>
-                                            <li><a href="house-keeping.html">House Keeping</a></li>
-                                            <li><a href="vehicle-cleaning.html">Vehicle Cleaning</a></li>
+                                            <li><a asp-area="" asp-controller="Services" asp-action="OfficeCleaning">Office Cleaning</a></li>
+                                            <li><a asp-area="" asp-controller="Services" asp-action="HouseKeeping">House Keeping</a></li>
+                                            <li><a asp-area="" asp-controller="Services" asp-action="CarpetCleaning">Carpet Cleaning</a></li>
+                                            <li><a asp-area="" asp-controller="Services" asp-action="TileCleaning">Tile Cleaning</a></li>
+                                            <li><a asp-area="" asp-controller="Services" asp-action="WindowCleaning">Window Cleaning</a></li>
+                                            <li><a asp-area="" asp-controller="Services" asp-action="LaundryService">Laundry Service</a></li>
+                                            <li><a asp-area="" asp-controller="Services" asp-action="Disinfection">Home and Office Disinfection</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown">
-                                        <a href="#">Case studies</a>
-                                        <ul>
-                                            <li><a href="case-1.html">Case Studies 01</a></li>
-                                            <li><a href="case-2.html">Case Studies 02</a></li>
-                                            <li><a href="case-3.html">Case Studies 03</a></li>
-                                            <li><a href="case-single.html">Single Case Study</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#">Blog</a>
-                                        <ul>
-                                            <li><a href="blog.html">Blog Default</a></li>
-                                            <li><a href="blog-large.html">Blog Large Image</a></li>
-                                            <li><a href="blog-single.html">Single Post</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact us</a></li>
+                                  
+                                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact us</a></li>
                                 </ul>
                             </div>
                         </nav><!-- Main Menu End-->
@@ -272,34 +212,7 @@
 
         <!--Main Footer-->
         <footer class="main-footer">
-            <div class="footer-upper-box">
-                <div class="auto-container">
-                    <div class="clearfix">
-
-                        <!--Expert Box-->
-                        <div class="expert-box">
-                            <div class="inner-box">
-                                <div class="icon-box">
-                                    <a href="about.html"><span class="icon flaticon-laborers"></span></a>
-                                </div>
-                                <h3><a href="about.html">Meet Our Experts</a></h3>
-                            </div>
-                        </div>
-
-                        <div class="left-column pull-left">
-                            <div class="content">
-                                <a href="contact.html"><span class="arrow-box flaticon-next-5"></span></a><h3><a href="contact.html">Find Our Nearest Office</a></h3><a href="contact.html"><span class="icon-box flaticon-trip"></span></a>
-                            </div>
-                        </div>
-                        <div class="right-column pull-right">
-                            <div class="content">
-                                <a href="appointment.html"><span class="icon-box flaticon-24-hours"></span></a><h3><a href="appointment.html">Emergency Restoration</a></h3><a href="appointment.html"><span class="arrow-box flaticon-next-5"></span></a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+           
             <!--Widgets Section-->
             <div class="widgets-section">
                 <div class="auto-container">
@@ -313,7 +226,7 @@
                                 <div class="footer-column col-md-7 col-sm-6">
                                     <div class="footer-widget we-are-widget">
                                         <h2>Who we are</h2>
-                                        <div class="text">Beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</div>
+                                        <div class="text">Is a reliable cleaning company making use of eco-friendly products which not only leave the office or home sparkling clean but your environment safe.</div>
                                         <a href="#" class="read-more">read more</a>
                                     </div>
                                 </div>
@@ -358,14 +271,12 @@
                                     <div class="footer-widget links-widget">
                                         <h2 class="alternate">+0 789.0123.456</h2>
                                         <ul class="contact-list">
-                                            <li>Info@Example.com</li>
-                                            <li>75014 Paris, France 48 Boulevard Jourdan Candiate.</li>
+                                            <li>info@cleanmate.co.za</li>
+                                            <li>marketing@cleanmate.co.za</li>
                                         </ul>
                                         <ul class="social-icon-one">
-                                            <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                            <li><a href="https://www.facebook.com/Cleanmate-114627660339637" target="_blank"><span class="fa fa-facebook-f"></span></a></li>
                                             <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                                            <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                                            <li><a href="#"><span class="fa fa-youtube"></span></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -384,11 +295,11 @@
                     <div class="clearfix">
 
                         <div class="logo-box">
-                            <a href="index-2.html"><img src="images/footer-logo.png" alt="" /></a>
+                            <a asp-area="" asp-controller="Home" asp-action="Index"><img src="images/footer-logo.png" alt="" /></a>
                         </div>
 
                         <div class="pull-left">
-                            <div class="copyright"> &copy; 2009–2018 All rights reserved by Moppers, <br> Certified cleaning company.</div>
+                            <div class="copyright"> &copy;@DateTime.Now.Year All rights reserved, <br> Developed by <a href="https://www.bytereflections.co.za" target="_blank">ByteReflections</a>.</div>
                         </div>
                         <div class="pull-right">
                             <!--Scroll to top-->

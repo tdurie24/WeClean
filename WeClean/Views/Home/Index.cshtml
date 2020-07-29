@@ -7,17 +7,17 @@
 
     <div class="main-slider-carousel owl-carousel owl-theme">
 
-        <div class="slide" style="background-image:url(~/images/main-slider/image-1.jpg);  height:700px;">
+        <div class="slide" style="background-image:url('images/main-slider/image1.jpg');  height:700px;">
             <div class="auto-container">
                 <div class="content">
                     <div class="title">Referred for a reason.</div>
                     <h2>Clean Home. <br> Professional Service. <br> Fair Price.</h2>
-                    <a href="#" class="theme-btn btn-style-one">About Company</a>
+                    <a asp-area="" asp-controller="Home" asp-action="About" class="theme-btn btn-style-one">About Us</a>
                 </div>
             </div>
         </div>
 
-        <div class="slide" style="background-image:url(~/images/main-slider/image-2.jpg);  height:700px;">
+        <div class="slide" style="background-image:url(images/main-slider/image2.jpg);  height:700px;">
             <div class="auto-container">
                 <div class="content alternate">
                     <div class="price">$49 <span>/ Starts From</span></div>
@@ -26,8 +26,19 @@
                 </div>
             </div>
         </div>
+ 
 
-        <div class="slide" style="background-image:url(~/images/main-slider/image-3.jpg);  height:700px;">
+        <div class="slide" style="background-image:url(images/main-slider/image3.jpg);  height:700px;">
+            <div class="auto-container">
+                <div class="content">
+                    <div class="title light">Neat is our middle name</div>
+                    <h2 class="light">Why should you <br> keep your windows <br> cleaned?</h2>
+                    <a href="#" class="theme-btn btn-style-two">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image:url(images/main-slider/image4.jpg);  height:700px;">
             <div class="auto-container">
                 <div class="content">
                     <div class="title light">Neat is our middle name</div>
@@ -50,11 +61,11 @@
                     <div class="icon-box">
                         <span class="icon flaticon-broom"></span>
                     </div>
-                    <h2>Welcome to Moppers</h2>
+                    <h2>Welcome to CleanMate</h2>
                     <div class="separator"></div>
                 </div>
                 <div class="pull-right">
-                    <div class="text">We understand the importance of making a good first impression. Same way <br> that your work environment should professional look.</div>
+                    <div class="text">We understand the importance of making a good first impression. Same way <br> that your work environment should professional look. We invest in eco-friendly products which have been fully tried and tested to give you a spotless clean while leaving a safe environment.</div>
                 </div>
             </div>
         </div>
@@ -65,13 +76,13 @@
             <div class="welcome-block col-lg-6 col-md-12 col-sm-12">
                 <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                     <div class="image">
-                        <a href="carpet-cleaning.html"><img src="~/images/resource/welcome-1.jpg" alt="" /></a>
+                        <a href="carpet-cleaning.html"><img src="~/images/resource/image5.jpg" alt="" /></a>
                         <div class="content-outer">
                             <div class="content">
-                                <h3>Commercial & Society</h3>
-                                <div class="text">Inventore veritatis et quasi architecto beatae.</div>
+                                <h3>Office Cleaning</h3>
+                                <div class="text">We offer the best and proffesional cleaning with little disturbance to your office staff or operations.</div>
                             </div>
-                            <a href="carpet-cleaning.html" class="arrow flaticon-next-5"></a>
+                            <a asp-area="" asp-controller="Services" asp-action="OfficeCleaning" class="arrow flaticon-next-5"></a>
                         </div>
                     </div>
                 </div>
@@ -84,10 +95,10 @@
                         <a href="carpet-cleaning.html"><img src="~/images/resource/welcome-2.jpg" alt="" /></a>
                         <div class="content-outer">
                             <div class="content">
-                                <h3>Carpet & Cleaning</h3>
-                                <div class="text">Inventore veritatis et quasi architecto beatae.</div>
+                                <h3>Home Cleaning</h3>
+                                <div class="text">Our staff is proffesional and honesty. We not only do the best spotless job but also take care of your valuables.</div>
                             </div>
-                            <a href="carpet-cleaning.html" class="arrow flaticon-next-5"></a>
+                            <a asp-area="" asp-controller="Services" asp-action="HomeCleaning" class="arrow flaticon-next-5"></a>
                         </div>
                     </div>
                 </div>
