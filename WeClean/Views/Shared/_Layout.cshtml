@@ -38,7 +38,7 @@
                         <div class="top-right pull-right">
                             <a href="#" class="mail-us"><span class="icon flaticon-interface-1"></span> Mail Us</a>
                             <!--Search Box-->
-                            <div class="search-box-outer">
+                            @*<div class="search-box-outer">
                                 <button class="search-box-btn dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
                                 <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu1">
                                     <li class="panel-outer">
@@ -52,7 +52,7 @@
                                         </div>
                                     </li>
                                 </ul>
-                            </div>
+                            </div>*@
 
                         </div>
                     </div>
@@ -124,12 +124,12 @@
                                     <li class="dropdown">
                                         <a  asp-area="" asp-controller="Services" asp-action="Contact">Services</a>
                                         <ul>
-                                            <li><a asp-area="" asp-controller="Services" asp-action="OfficeCleaning">Office Cleaning</a></li>
-                                            <li><a asp-area="" asp-controller="Services" asp-action="HouseKeeping">House Keeping</a></li>
+                                            @*<li><a asp-area="" asp-controller="Services" asp-action="OfficeCleaning">Office Cleaning</a></li>*@
+                                            <li><a asp-area="" asp-controller="Services" asp-action="HouseKeeping">Home and Office Cleaning</a></li>
                                             <li><a asp-area="" asp-controller="Services" asp-action="CarpetCleaning">Carpet Cleaning</a></li>
                                             <li><a asp-area="" asp-controller="Services" asp-action="TileCleaning">Tile Cleaning</a></li>
                                             <li><a asp-area="" asp-controller="Services" asp-action="WindowCleaning">Window Cleaning</a></li>
-                                            <li><a asp-area="" asp-controller="Services" asp-action="LaundryService">Laundry Service</a></li>
+                                            @*<li><a asp-area="" asp-controller="Services" asp-action="LaundryService">Laundry Service</a></li>*@
                                             <li><a asp-area="" asp-controller="Services" asp-action="Disinfection">Home and Office Disinfection</a></li>
                                         </ul>
                                     </li>
@@ -178,18 +178,18 @@
                                     <li class="current dropdown">
                                         <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                                     </li>
-                                    <li class="dropdown">
+                                    <li>
                                         <a asp-area="" asp-controller="Home" asp-action="About">About</a>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#">Services</a>
                                         <ul>
-                                            <li><a asp-area="" asp-controller="Services" asp-action="OfficeCleaning">Office Cleaning</a></li>
-                                            <li><a asp-area="" asp-controller="Services" asp-action="HouseKeeping">House Keeping</a></li>
+                                            @*<li><a asp-area="" asp-controller="Services" asp-action="OfficeCleaning">Office Cleaning</a></li>*@
+                                            <li><a asp-area="" asp-controller="Services" asp-action="HouseKeeping">Home and Office Cleaning</a></li>
                                             <li><a asp-area="" asp-controller="Services" asp-action="CarpetCleaning">Carpet Cleaning</a></li>
                                             <li><a asp-area="" asp-controller="Services" asp-action="TileCleaning">Tile Cleaning</a></li>
                                             <li><a asp-area="" asp-controller="Services" asp-action="WindowCleaning">Window Cleaning</a></li>
-                                            <li><a asp-area="" asp-controller="Services" asp-action="LaundryService">Laundry Service</a></li>
+                                            @*<li><a asp-area="" asp-controller="Services" asp-action="LaundryService">Laundry Service</a></li>*@
                                             <li><a asp-area="" asp-controller="Services" asp-action="Disinfection">Home and Office Disinfection</a></li>
                                         </ul>
                                     </li>
@@ -226,8 +226,8 @@
                                 <div class="footer-column col-md-7 col-sm-6">
                                     <div class="footer-widget we-are-widget">
                                         <h2>Who we are</h2>
-                                        <div class="text">Is a reliable cleaning company making use of eco-friendly products which not only leave the office or home sparkling clean but your environment safe.</div>
-                                        <a href="#" class="read-more">read more</a>
+                                        <div class="text">Cleanmate is a reliable cleaning company making use of eco-friendly products which not only leave the office or home sparkling clean but your environment safe.</div>
+                                        <a asp-area="" asp-controller="Home" asp-action="About" class="read-more">read more</a>
                                     </div>
                                 </div>
 
@@ -236,11 +236,13 @@
                                     <div class="footer-widget links-widget">
                                         <h2>Services</h2>
                                         <ul class="footer-links">
-                                            <li><a href="#">Carpet Cleaning</a></li>
-                                            <li><a href="#">Tile and Grout</a></li>
-                                            <li><a href="#">Housekeeping</a></li>
-                                            <li><a href="#">Window Cleaning</a></li>
-                                            <li><a href="#">Pool Cleaning</a></li>
+                                            @*<li><a asp-area="" asp-controller="Services" asp-action="OfficeCleaning">Office Cleaning</a></li>*@
+                                            <li><a asp-area="" asp-controller="Services" asp-action="HouseKeeping">Home and Office Cleaning</a></li>
+                                            <li><a asp-area="" asp-controller="Services" asp-action="CarpetCleaning">Carpet Cleaning</a></li>
+                                            <li><a asp-area="" asp-controller="Services" asp-action="TileCleaning">Tile Cleaning</a></li>
+                                            <li><a asp-area="" asp-controller="Services" asp-action="WindowCleaning">Window Cleaning</a></li>
+                                            @*<li><a asp-area="" asp-controller="Services" asp-action="LaundryService">Laundry Service</a></li>*@
+                                            <li><a asp-area="" asp-controller="Services" asp-action="Disinfection">Home and Office Disinfection</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -255,13 +257,11 @@
                                 <!--Footer Column-->
                                 <div class="footer-column col-md-6 col-sm-6">
                                     <div class="footer-widget links-widget">
-                                        <h2>Services</h2>
+                                        <h2>Navigation</h2>
                                         <ul class="footer-links">
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">About Us</a></li>
-                                            <li><a href="#">Testimonial</a></li>
-                                            <li><a href="#">Case studies</a></li>
-                                            <li><a href="#">Contact us</a></li>
+                                            <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                                            <li><a asp-area="" asp-controller="Home" asp-action="About">About Us</a></li>
+                                            <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact us</a></li>
                                         </ul>
                                     </div>
                                 </div>

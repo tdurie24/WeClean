@@ -4,5 +4,102 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Contact</h1>
+<!--In Touch Section-->
+<section class="in-touch-section" style="background-image:url(/images/background/5.jpg)">
+    <div class="auto-container">
+        <div class="sec-title light">
+            <h2>Get Touch With Us</h2>
+            <div class="separator"></div>
+        </div>
+        <div class="row clearfix">
+            <!--In Touch Block-->
+            <div class="in-touch-block col-lg-6 col-md-6 col-sm-12">
+                <div class="inner-box">
+                    <h3>Phone & Mail</h3>
+                    <ul>
+                        <li>+0 789.0123.456</li>
+                        <li>info@cleanmate.co.za</li>
+                        <li>support@cleanmate.co.za</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--In Touch Block-->
+            <div class="in-touch-block col-lg-6 col-md-6 col-sm-12">
+                <div class="inner-box">
+                    <h3>Opening Hours</h3>
+                    <ul>
+                        <li>Sunday - Friday: 9.00 am to 7.00 pm.</li>
+                        <li>Saturday: Closed.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--End In Touch Section-->
+<!--Contact Page Section-->
+<section class="contact-page-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+
+            <!--Form Column-->
+            <div class="form-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner-column">
+                    <!--Contact Form-->
+                    <div class="contact-form">
+                        @*<form method="post" action="" id="contact-form">*@
+                            <div class="row clearfix">
+                                <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                    <label>Name</label>
+                                    <input type="text" name="username" value="" placeholder="Enter Your Name" required>
+                                </div>
+
+                                <div class="form-group col-md-6 col-sm-6">
+                                    <label>Email</label>
+                                    <input type="email" name="email" value="" placeholder="Email Address" required>
+                                </div>
+
+                                <div class="form-group col-md-6 col-sm-6">
+                                    <label>Phone</label>
+                                    <input type="text" name="phone" value="" placeholder="Phone" required>
+                                </div>
+
+                                <div class="form-group col-md-12 col-sm-12">
+                                    <label>Your Message</label>
+                                    <textarea name="message" placeholder="Your words goes here..."></textarea>
+                                </div>
+
+                                <div class="form-group col-md-12 col-sm-12">
+                                    <button type="submit" class="theme-btn message-btn">Send Message</button>
+                                </div>
+                            </div>
+                        @*</form>*@
+                    </div>
+                    <!--End Contact Form-->
+                </div>
+            </div>
+
+            <!--Content Column-->
+            <div class="content-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner-column">
+                    <!--Sec Title-->
+                    <div class="sec-title">
+                        <div class="icon-box">
+                            <span class="icon flaticon-broom"></span>
+                        </div>
+                        <h2>Contact Persons</h2>
+                        <div class="separator"></div>
+                    </div>
+                    <div class="text">You can talk directly with any department you want to talk to, Feel free to contact us, dont be shy.</div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--End Contact Page Section-->
+
 
