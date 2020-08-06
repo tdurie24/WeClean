@@ -11,7 +11,7 @@
             <div class="auto-container">
                 <div class="content">
                     <div class="title">Referred for a reason.</div>
-                    <h2>Clean Home. <br> Professional Service. <br> Fair Price.</h2>
+                    <h2 style="color:white">Clean Home. <br> Professional Service. <br> Fair Price.</h2>
                     <a asp-area="" asp-controller="Home" asp-action="About" class="theme-btn btn-style-one">About Us</a>
                 </div>
             </div>
@@ -20,9 +20,8 @@
         <div class="slide" style="background-image:url(images/main-slider/image2.jpg);  height:700px;">
             <div class="auto-container">
                 <div class="content alternate">
-                    <div class="price">$49 <span>/ Starts From</span></div>
-                    <h2>Provides high <br> quality green <br> cleaning services</h2>
-                    <a href="#" class="theme-btn btn-style-one">Our Services</a>
+                    <h2 style="color:#9eda78">We provides high <br> quality green <br> cleaning services for homes and offices.</h2>
+                    <a asp-area="" asp-controller="Services" asp-action="HouseKeeping" class="theme-btn btn-style-one">Cleaning Services</a>
                 </div>
             </div>
         </div>
@@ -32,8 +31,9 @@
             <div class="auto-container">
                 <div class="content">
                     <div class="title light">Neat is our middle name</div>
-                    <h2 class="light">Why should you <br> keep your windows <br> cleaned?</h2>
-                    <a href="#" class="theme-btn btn-style-two">Read More</a>
+                    @*<h2 class="light">We offer the best window cleaning services <br> leaving a <br> lasting sparkle</h2>*@
+                <h2 style="color:#002d4c">Deep cleaning to sanitizing, disinfection, chairs and carpets <br> leaving a <br> safe environment.</h2>
+                    <a asp-area="" asp-controller="Home" asp-action="Contact" class="theme-btn btn-style-two">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -41,9 +41,9 @@
         <div class="slide" style="background-image:url(images/main-slider/image4.jpg);  height:700px;">
             <div class="auto-container">
                 <div class="content">
-                    <div class="title light">Neat is our middle name</div>
-                    <h2 class="light">Why should you <br> keep your windows <br> cleaned?</h2>
-                    <a href="#" class="theme-btn btn-style-two">Read More</a>
+                    <div class="title light">Proffessional and trustworthy services </div>
+                    <h2 class="light">Quick and efficient <br> team to clean <br> your household?</h2>
+                    <a asp-area="" asp-controller="Home" asp-action="Contact" class="theme-btn btn-style-two">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -134,7 +134,7 @@
                     </div>
                     <div class="lower-content">
                         <div class="image">
-                            <a href="carpet-cleaning.html"><img src="images/resource/feature-1.jpg" alt="" /></a>
+                            <a asp-area="" asp-controller="Services" asp-action="CarpetCleaning"><img src="images/resource/feature-1.jpg" alt="" /></a>
                         </div>
                     </div>
                 </div>
@@ -152,7 +152,7 @@
                     </div>
                     <div class="lower-content">
                         <div class="image">
-                            <a href="tile-grout.html"><img src="images/resource/feature-2.jpg" alt="" /></a>
+                            <a asp-area="" asp-controller="Services" asp-action="TileCleaning"><img src="images/resource/feature-2.jpg" alt="" /></a>
                         </div>
                     </div>
                 </div>
@@ -170,7 +170,7 @@
                     </div>
                     <div class="lower-content">
                         <div class="image">
-                            <a href="laundry-service.html"><img src="images/resource/feature-3.jpg" alt="" /></a>
+                            <a asp-area="" asp-controller="Services" asp-action="HouseKeeping"><img src="images/resource/feature-3.jpg" alt="" /></a>
                         </div>
                     </div>
                 </div>
@@ -188,7 +188,7 @@
                     </div>
                     <div class="lower-content">
                         <div class="image">
-                            <a href="carpet-cleaning.html"><img src="images/resource/feature-1.jpg" alt="" /></a>
+                            <a asp-area="" asp-controller="Services" asp-action="Disinfection"><img src="images/resource/disinfection.jpg" alt="" /></a>
                         </div>
                     </div>
                 </div>
@@ -206,7 +206,7 @@
                     </div>
                     <div class="lower-content">
                         <div class="image">
-                            <a href="tile-grout.html"><img src="images/resource/feature-2.jpg" alt="" /></a>
+                            <a asp-area="" asp-controller="Services" asp-action="TileCleaning"><img src="images/resource/windowcleaning.jpg" alt="" /></a>
                         </div>
                     </div>
                 </div>
@@ -244,15 +244,16 @@
                             <!--Image Column-->
                             <div class="image-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="image">
-                                    <img src="images/resource/cleaner-1.jpg" alt="" />
+                                    <img src="images/resource/cleaner-2.jpg" alt="" />
                                 </div>
                             </div>
                             <!--Image Column-->
                             <div class="image-column col-lg-6 col-md-6 col-sm-12">
                                 <div class="image">
-                                    <img src="images/resource/cleaner-2.jpg" alt="" />
+                                    <img src="images/resource/cleaningequipment.jpg" alt="" />
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -269,9 +270,8 @@
                     <div class="inner-column">
                         <div class="video-box">
                             <figure class="image">
-                                <img src="images/resource/video-img.jpg" alt="">
+                                <img src="images/resource/office-disinfection.jpg" alt="">
                             </figure>
-                            <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image overlay-box"><span class="flaticon-play-arrow"></span><div class="text">About Company</div></a>
                         </div>
                     </div>
                 </div>
